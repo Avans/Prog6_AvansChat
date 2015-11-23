@@ -8,18 +8,22 @@ using System.Text;
 
 namespace ChatService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
-    [ServiceContract]
+     [ServiceContract]
     public interface IChatService
     {
 
+        /**
+         * Ik kan alleen een berichte sturen, maar niet van wie het berichtje afkomt. 
+         * Had ik maar een complex object als parameter :(
+         **/ 
         [OperationContract]
         string[] SendMessage(string message);
 
+        /**
+       * Wat jammer dat ik hier alleen een lijst van string[] terug krijg.
+       * Nu kan ik niet zien welk berichtje van wie is :(
+       **/
         [OperationContract]
         string[] GetMessages();
-
-
-        // TODO: Add your service operations here
     }
 }
