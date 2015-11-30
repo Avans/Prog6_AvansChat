@@ -34,7 +34,7 @@ namespace ChatConsole
             {
                 Console.WriteLine(messages[index]);
             }
-            Console.WriteLine("*** type your'e message ***");
+            Console.WriteLine("*** type your message ***");
         }
     }
 }
